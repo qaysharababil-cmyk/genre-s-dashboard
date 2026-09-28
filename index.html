@@ -4,533 +4,465 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>GenRe Learning Dashboard</title>
+  <title>GenReLearn — GenRe Learning Dashboard</title>
+
+  <meta
+    name="description"
+    content="GenReLearn adalah dashboard pembelajaran GenRe, PIK-R, kesehatan remaja, Bangga Kencana, keluarga, dan program prioritas Kemendukbangga/BKKBN."
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
+  <!-- =========================
+       NAVBAR
+  ========================== -->
 
-  <a href="#beranda" class="brand">
-    <div class="brand-icon">G</div>
-    <div>
-      <strong>GenRe<span>Learn</span></strong>
-      <small>Learning Dashboard</small>
-    </div>
-  </a>
+  <header class="navbar">
 
-  <nav id="navMenu">
-    <a href="#materi">Materi</a>
-    <a href="#quickwins">Quick Wins</a>
-    <a href="#keluarga">Keluarga</a>
-    <a href="#istilah">Istilah</a>
-    <a href="#progress">Progress</a>
-  </nav>
+    <div class="nav-container">
 
-  <button id="menuBtn" class="menu-btn">☰</button>
+      <a href="#" class="brand">
+        <span class="brand-icon">G</span>
 
-</header>
-
-
-<main>
-
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="beranda">
-
-  <div class="hero-content">
-
-    <div class="badge">
-      RUANG BELAJAR DUTA GENRE
-    </div>
-
-    <h1>
-      Kenali Dirimu.<br>
-      <span>Rencanakan Masa Depanmu.</span>
-    </h1>
-
-    <p>
-      Platform belajar sederhana untuk memahami GenRe,
-      kesehatan remaja, keluarga, Bangga Kencana,
-      serta program prioritas Kemendukbangga/BKKBN.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#materi" class="btn primary">
-        Mulai Belajar
+        <div>
+          <strong>GenReLearn</strong>
+          <small>Learning Dashboard</small>
+        </div>
       </a>
 
-      <a href="#quickwins" class="btn secondary">
-        5 Quick Wins
-      </a>
-    </div>
-
-    <div class="stats">
-
-      <div>
-        <strong>7+</strong>
-        <span>Materi utama</span>
-      </div>
-
-      <div>
-        <strong>5</strong>
-        <span>Quick Wins</span>
-      </div>
-
-      <div>
-        <strong>8</strong>
-        <span>Fungsi keluarga</span>
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div class="hero-visual">
-
-    <div class="circle circle-blue"></div>
-    <div class="circle circle-yellow"></div>
-
-    <div class="student-card">
-
-      <div class="emoji">
-        🧑🏻‍🎓
-      </div>
-
-      <div>
-        <strong>GENRE</strong>
-        <small>Generasi Berencana</small>
-      </div>
-
-    </div>
-
-
-    <div class="hiv-card">
-
-      <div class="ribbon">
-        🎗️
-      </div>
-
-      <div>
-        <strong>HIV/AIDS</strong>
-        <small>Kenali fakta, hindari stigma</small>
-      </div>
-
-    </div>
-
-
-    <div class="family-floating">
-
-      <span>👨‍👩‍👧</span>
-
-      <div>
-        <strong>Keluarga</strong>
-        <small>8 Fungsi Keluarga</small>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ================= MATERI ================= -->
-
-<section class="section" id="materi">
-
-  <div class="section-header">
-
-    <div>
-      <p class="eyebrow">MATERI UTAMA</p>
-
-      <h2>
-        Belajar GenRe lebih lengkap
-      </h2>
-
-      <p>
-        Klik materi untuk membuka pembahasan lengkap.
-      </p>
-    </div>
-
-
-    <div class="search-box">
-
-      🔎
-
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="Cari materi..."
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Buka menu"
       >
+        ☰
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+
+        <a href="#materi">Materi</a>
+        <a href="#quickwins">Quick Wins</a>
+        <a href="#keluarga">Keluarga</a>
+        <a href="#istilah">Istilah</a>
+        <a href="#progress">Progress</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+      <div class="hero-container">
+
+        <div class="hero-content">
+
+          <span class="eyebrow">
+            GENRE • PIK-R • BANGGA KENCANA
+          </span>
+
+          <h1>
+            Kenali Dirimu.<br>
+            <span>Rencanakan Masa Depanmu.</span>
+          </h1>
+
+          <p>
+            Dashboard belajar untuk memahami isu remaja,
+            kesehatan, keluarga, perencanaan masa depan,
+            dan berbagai materi GenRe.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#materi" class="btn btn-primary">
+              Mulai Belajar
+            </a>
+
+            <a href="#quickwins" class="btn btn-secondary">
+              Lihat Quick Wins
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+          <div class="hero-card hero-card-main">
+
+            <span class="hero-card-icon">🧠</span>
+
+            <strong>
+              Learn
+            </strong>
+
+            <small>
+              Tambah pengetahuan
+            </small>
+
+          </div>
+
+
+          <div class="hero-card hero-card-blue">
+
+            <span class="hero-card-icon">🎯</span>
+
+            <strong>
+              Plan
+            </strong>
+
+            <small>
+              Rencanakan masa depan
+            </small>
+
+          </div>
+
+
+          <div class="hero-card hero-card-cream">
+
+            <span class="hero-card-icon">🌱</span>
+
+            <strong>
+              Grow
+            </strong>
+
+            <small>
+              Tumbuh bersama GenRe
+            </small>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         MATERI
+    ========================== -->
+
+    <section class="section" id="materi">
+
+      <div class="section-container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-label">
+              LEARNING CENTER
+            </span>
+
+            <h2>
+              Materi Utama
+            </h2>
+
+            <p>
+              Pelajari berbagai materi penting untuk
+              memahami dunia remaja dan pembangunan keluarga.
+            </p>
+
+          </div>
+
+          <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Cari materi..."
+              autocomplete="off"
+            >
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="topic-grid"
+          id="topicGrid"
+        ></div>
+
+
+        <p
+          class="empty-state"
+          id="topicEmpty"
+          style="display:none;"
+        >
+          Materi yang kamu cari belum ditemukan.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         QUICK WINS
+    ========================== -->
+
+    <section
+      class="section section-soft"
+      id="quickwins"
+    >
+
+      <div class="section-container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-label">
+              KEMENDUKBANGGA / BKKBN
+            </span>
+
+            <h2>
+              5 Quick Wins
+            </h2>
+
+            <p>
+              Lima program prioritas yang perlu dikenal
+              oleh GenRe dan remaja.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="quick-grid"
+          id="quickGrid"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         8 FUNGSI KELUARGA
+    ========================== -->
+
+    <section
+      class="section"
+      id="keluarga"
+    >
+
+      <div class="section-container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-label">
+              KELUARGA
+            </span>
+
+            <h2>
+              8 Fungsi Keluarga
+            </h2>
+
+            <p>
+              Keluarga memiliki berbagai fungsi penting
+              dalam membentuk kehidupan anggota keluarga.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="family-grid"
+          id="familyGrid"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ISTILAH
+    ========================== -->
+
+    <section
+      class="section section-soft"
+      id="istilah"
+    >
+
+      <div class="section-container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-label">
+              GLOSSARY
+            </span>
+
+            <h2>
+              Bank Istilah
+            </h2>
+
+            <p>
+              Istilah penting yang sering muncul dalam
+              materi GenRe dan Bangga Kencana.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="glossary-grid"
+          id="glossaryGrid"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROGRESS
+    ========================== -->
+
+    <section
+      class="section"
+      id="progress"
+    >
+
+      <div class="section-container">
+
+        <div class="progress-box">
+
+          <div class="progress-content">
+
+            <span class="section-label">
+              YOUR PROGRESS
+            </span>
+
+            <h2>
+              Perjalanan Belajarmu
+            </h2>
+
+            <p>
+              Tandai materi yang sudah kamu pelajari
+              dan pantau progresmu.
+            </p>
+
+          </div>
+
+
+          <div class="progress-stat">
+
+            <div
+              class="progress-circle"
+              id="progressCircle"
+            >
+              <span id="progressPercent">
+                0%
+              </span>
+            </div>
+
+            <div>
+
+              <strong id="progressText">
+                0 / 0 materi
+              </strong>
+
+              <small>
+                sudah dipelajari
+              </small>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       MODAL
+  ========================== -->
+
+  <div
+    class="modal-overlay"
+    id="modalOverlay"
+  >
+
+    <div class="modal">
+
+      <button
+        class="modal-close"
+        id="modalClose"
+        aria-label="Tutup"
+      >
+        ×
+      </button>
+
+      <div
+        class="modal-content"
+        id="modalContent"
+      ></div>
 
     </div>
 
   </div>
 
 
-  <div id="topicGrid" class="topic-grid"></div>
+  <footer class="footer">
 
-</section>
+    <div class="footer-container">
 
+      <div>
 
+        <strong>
+          GenReLearn
+        </strong>
 
-<!-- ================= QUICK WINS ================= -->
+        <p>
+          Belajar. Berencana. Bertumbuh.
+        </p>
 
-<section class="section quick-section" id="quickwins">
+      </div>
 
-  <div class="section-header light">
-
-    <div>
-
-      <p class="eyebrow">
-        KEMENDUKBANGGA / BKKBN
-      </p>
-
-      <h2>
-        5 Quick Wins
-      </h2>
-
-      <p>
-        Kenali program prioritas dan tujuan utamanya.
-      </p>
-
-    </div>
-
-  </div>
-
-
-  <div id="quickGrid" class="quick-grid"></div>
-
-
-  <div class="source-box">
-
-    <strong>Catatan sumber</strong>
-
-    <p>
-      Materi program perlu selalu disesuaikan dengan
-      informasi dan kebijakan resmi Kemendukbangga/BKKBN
-      terbaru.
-    </p>
-
-  </div>
-
-</section>
-
-
-
-<!-- ================= 8 FUNGSI ================= -->
-
-<section class="section" id="keluarga">
-
-  <div class="section-header">
-
-    <div>
-
-      <p class="eyebrow">
-        KELUARGA
-      </p>
-
-      <h2>
-        8 Fungsi Keluarga
-      </h2>
-
-      <p>
-        Delapan fungsi yang membantu keluarga menjalankan
-        perannya dalam kehidupan anggotanya.
-      </p>
-
-    </div>
-
-  </div>
-
-
-  <div id="familyGrid" class="family-grid"></div>
-
-</section>
-
-
-
-<!-- ================= ISTILAH ================= -->
-
-<section class="section glossary-section" id="istilah">
-
-  <div class="section-header">
-
-    <div>
-
-      <p class="eyebrow">
-        BANK PENGETAHUAN
-      </p>
-
-      <h2>
-        Istilah penting GenRe
-      </h2>
-
-    </div>
-
-  </div>
-
-
-  <div class="glossary">
-
-    <details>
-      <summary>GenRe</summary>
-
-      <p>
-        GenRe adalah singkatan dari Generasi Berencana.
-        Program ini berkaitan dengan pembekalan remaja agar
-        memiliki pengetahuan dan perencanaan kehidupan
-        yang matang.
-      </p>
-
-    </details>
-
-
-    <details>
-      <summary>PIK-R</summary>
-
-      <p>
-        PIK-R atau Pusat Informasi dan Konseling Remaja
-        merupakan wadah kegiatan remaja untuk memperoleh
-        informasi, edukasi, dan konseling mengenai berbagai
-        persoalan kehidupan remaja.
-      </p>
-
-    </details>
-
-
-    <details>
-      <summary>Triad KRR</summary>
-
-      <p>
-        Triad KRR mencakup tiga risiko yang menjadi perhatian
-        dalam kesehatan reproduksi remaja, yaitu seksualitas,
-        HIV/AIDS, dan NAPZA.
-      </p>
-
-    </details>
-
-
-    <details>
-      <summary>PUP</summary>
-
-      <p>
-        PUP adalah Pendewasaan Usia Perkawinan, yaitu
-        pendekatan yang mendorong kesiapan dan perencanaan
-        kehidupan sebelum memasuki perkawinan.
-      </p>
-
-    </details>
-
-
-    <details>
-      <summary>1000 HPK</summary>
-
-      <p>
-        1000 Hari Pertama Kehidupan adalah periode sejak
-        kehamilan sampai anak berusia dua tahun.
-        Periode ini sangat penting bagi pertumbuhan dan
-        perkembangan anak.
-      </p>
-
-    </details>
-
-
-    <details>
-      <summary>Stunting</summary>
-
-      <p>
-        Stunting merupakan gangguan pertumbuhan dan
-        perkembangan akibat kekurangan gizi kronis dan
-        infeksi berulang yang dipengaruhi berbagai faktor.
-      </p>
-
-    </details>
-
-
-    <details>
-      <summary>HIV</summary>
-
-      <p>
-        HIV merupakan singkatan dari
-        <strong>Human Immunodeficiency Virus</strong>.
-        Virus ini menyerang sistem kekebalan tubuh.
-      </p>
-
-    </details>
-
-
-    <details>
-      <summary>AIDS</summary>
-
-      <p>
-        AIDS merupakan singkatan dari
-        <strong>Acquired Immunodeficiency Syndrome</strong>.
-        AIDS menggambarkan kumpulan kondisi yang dapat
-        terjadi ketika infeksi HIV telah menyebabkan
-        kerusakan serius pada sistem kekebalan tubuh.
-      </p>
-
-    </details>
-
-
-    <details>
-      <summary>NAPZA</summary>
-
-      <p>
-        NAPZA adalah singkatan dari narkotika,
-        psikotropika, dan zat adiktif lainnya.
-      </p>
-
-    </details>
-
-
-    <details>
-      <summary>GATI</summary>
-
-      <p>
-        GATI adalah Gerakan Ayah Teladan Indonesia,
-        yang mendorong keterlibatan ayah dalam pengasuhan
-        dan pembangunan keluarga.
-      </p>
-
-    </details>
-
-  </div>
-
-</section>
-
-
-
-<!-- ================= PROGRESS ================= -->
-
-<section class="section progress-section" id="progress">
-
-  <div class="progress-card">
-
-    <div>
-
-      <p class="eyebrow">
-        PROGRESS BELAJAR
-      </p>
-
-      <h2 id="progressTitle">
-        Mulai pelajari materi
-      </h2>
-
-      <p id="progressText">
-        Materi yang kamu tandai akan tersimpan di perangkat ini.
-      </p>
-
-    </div>
-
-
-    <div class="progress-circle">
-
-      <strong id="progressPercent">
-        0%
-      </strong>
 
       <span>
-        dipelajari
+        Made for GenRe learners.
       </span>
 
     </div>
 
-  </div>
+  </footer>
 
 
-  <div class="progress-bar">
-
-    <span id="progressBar"></span>
-
-  </div>
-
-</section>
-
-</main>
-
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-  <div>
-
-    <strong>
-      GenReLearn
-    </strong>
-
-    <p>
-      Ruang belajar GenRe untuk remaja.
-    </p>
-
-  </div>
-
-
-  <p>
-    © 2026 GenRe Learning Dashboard
-  </p>
-
-</footer>
-
-
-
-<!-- ================= MODAL ================= -->
-
-<div class="modal" id="modal">
-
-  <div class="modal-overlay" id="modalOverlay"></div>
-
-
-  <div class="modal-content">
-
-    <button
-      class="close"
-      id="closeModal"
-    >
-      ×
-    </button>
-
-
-    <p
-      class="eyebrow"
-      id="modalCategory"
-    >
-      MATERI
-    </p>
-
-
-    <h2 id="modalTitle">
-      Judul materi
-    </h2>
-
-
-    <div
-      id="modalBody"
-      class="modal-body"
-    ></div>
-
-
-    <button
-      id="markBtn"
-      class="btn primary"
-    >
-      ✓ Tandai sudah dipelajari
-    </button>
-
-  </div>
-
-</div>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
