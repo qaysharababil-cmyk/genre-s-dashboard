@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenRe — Ruang Edukasi Remaja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span>Gen</span>Re
+        </a>
+        <nav>
+            <a href="#tentang">Tentang</a>
+            <a href="#materi">Materi</a>
+            <a href="#keluarga">Keluarga</a>
+            <a href="#gati">GATI</a>
+        </nav>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+    <!-- HERO -->
+    <section class="hero" id="tentang">
+        <div class="hero-decoration circle-one"></div>
+        <div class="hero-decoration circle-two"></div>
+        <div class="hero-content">
+            <div class="badge">
+                ✦ RUANG EDUKASI REMAJA
+            </div>
+            <h1>
+                Kenali Dirimu,<br>
+                <span>Rencanakan</span><br>
+                Masa Depanmu.
+            </h1>
+            <p>
+                Ruang belajar interaktif untuk mengenal kesehatan
+                reproduksi, keluarga, dan perencanaan kehidupan remaja.
+            </p>
+            <button class="primary-btn" onclick="scrollToSection('materi')">
+                Mulai Eksplorasi →
+            </button>
+        </div>
+        <!-- HERO VISUAL -->
+        <div class="hero-visual">
+            <div class="visual-card main-card">
+                <div class="mini-label">GENRE</div>
+                <div class="teen-icons">
+                    <div>🧑🏻‍🎓</div>
+                    <div>👩🏻‍🎓</div>
+                    <div>🧑🏽‍🎓</div>
+                </div>
+                <h3>Remaja Hebat</h3>
+                <p>
+                    Berencana hari ini,<br>
+                    siap menghadapi masa depan.
+                </p>
+            </div>
+            <div class="floating-card ribbon-card">
+                <span class="ribbon">🎗️</span>
+                <div>
+                    <strong>HIV/AIDS</strong>
+                    <small>Edukasi & pencegahan</small>
+                </div>
+            </div>
+            <div class="floating-card family-card">
+                <span>👨‍👩‍👧</span>
+                <div>
+                    <strong>Keluarga</strong>
+                    <small>Tempat tumbuh bersama</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- QUICK INFO -->
+    <section class="quick-section">
+        <div class="quick-card">
+            <div class="quick-icon">🧠</div>
+            <div>
+                <strong>Triad KRR</strong>
+                <span>3 isu utama remaja</span>
+            </div>
+        </div>
+        <div class="quick-card">
+            <div class="quick-icon">🏠</div>
+            <div>
+                <strong>8 Fungsi Keluarga</strong>
+                <span>Fondasi kehidupan keluarga</span>
+            </div>
+        </div>
+        <div class="quick-card">
+            <div class="quick-icon">🌱</div>
+            <div>
+                <strong>Perencanaan</strong>
+                <span>Siapkan masa depan</span>
+            </div>
+        </div>
+    </section>
+    <!-- TRIAS KRR -->
+    <section class="section" id="materi">
+        <div class="section-heading">
+            <span>01 — KESEHATAN REMAJA</span>
+            <h2>Triad KRR</h2>
+            <p>
+                Kenali isu yang perlu dipahami remaja
+                untuk menjaga diri dan masa depan.
+            </p>
+        </div>
+        <div class="triad-grid">
+            <article class="topic-card blue-card"
+                onclick="openModal('Seksualitas', 'Memahami kesehatan reproduksi, hubungan yang sehat, batasan diri, dan pengambilan keputusan yang bertanggung jawab.')">
+                <div class="topic-number">01</div>
+                <div class="topic-icon">🫶</div>
+                <h3>Seksualitas</h3>
+                <p>
+                    Kenali diri, pahami batasan,
+                    dan jaga kesehatan reproduksi.
+                </p>
+                <span class="learn">Pelajari →</span>
+            </article>
+            <article class="topic-card red-card"
+                onclick="openModal('HIV/AIDS', 'Pelajari informasi dasar tentang HIV/AIDS, cara penularan, pencegahan, dan pentingnya menghindari stigma.')">
+                <div class="topic-number">02</div>
+                <div class="ribbon-large">🎗️</div>
+                <h3>HIV/AIDS</h3>
+                <p>
+                    Edukasi, pencegahan,
+                    dan hilangkan stigma.
+                </p>
+                <span class="learn">Pelajari →</span>
+            </article>
+            <article class="topic-card green-card"
+                onclick="openModal('NAPZA', 'Pahami risiko penyalahgunaan narkotika, psikotropika, dan zat adiktif serta pentingnya memilih lingkungan yang positif.')">
+                <div class="topic-number">03</div>
+                <div class="topic-icon">🛡️</div>
+                <h3>NAPZA</h3>
+                <p>
+                    Kenali risikonya dan
+                    berani memilih hidup sehat.
+                </p>
+                <span class="learn">Pelajari →</span>
+            </article>
+        </div>
+    </section>
+    <!-- 8 FUNGSI KELUARGA -->
+    <section class="family-section" id="keluarga">
+        <div class="section-heading light">
+            <span>02 — KELUARGA</span>
+            <h2>8 Fungsi Keluarga</h2>
+            <p>
+                Keluarga adalah tempat pertama untuk belajar,
+                tumbuh, dan membangun kehidupan.
+            </p>
+        </div>
+        <div class="family-grid">
+            <div class="family-item">
+                <span>01</span>
+                <b>🕌 Agama</b>
+                <small>Landasan nilai kehidupan</small>
+            </div>
+            <div class="family-item">
+                <span>02</span>
+                <b>🎭 Sosial Budaya</b>
+                <small>Mengenal nilai dan budaya</small>
+            </div>
+            <div class="family-item">
+                <span>03</span>
+                <b>❤️ Cinta Kasih</b>
+                <small>Membangun hubungan positif</small>
+            </div>
+            <div class="family-item">
+                <span>04</span>
+                <b>🛡️ Perlindungan</b>
+                <small>Memberikan rasa aman</small>
+            </div>
+            <div class="family-item">
+                <span>05</span>
+                <b>🌱 Reproduksi</b>
+                <small>Menjaga keberlangsungan keluarga</small>
+            </div>
+            <div class="family-item">
+                <span>06</span>
+                <b>📚 Sosialisasi & Pendidikan</b>
+                <small>Tempat belajar pertama</small>
+            </div>
+            <div class="family-item">
+                <span>07</span>
+                <b>💰 Ekonomi</b>
+                <small>Membangun kemandirian</small>
+            </div>
+            <div class="family-item">
+                <span>08</span>
+                <b>🌳 Lingkungan</b>
+                <small>Peduli terhadap lingkungan</small>
+            </div>
+        </div>
+    </section>
+    <!-- PUP -->
+    <section class="section pup-section">
+        <div class="pup-content">
+            <div>
+                <span class="section-label">03 — PERENCANAAN</span>
+                <h2>
+                    Masa depan tidak<br>
+                    terjadi begitu saja.
+                </h2>
+                <p>
+                    Perencanaan kehidupan membantu remaja
+                    mempersiapkan pendidikan, karier, kesehatan,
+                    dan kehidupan berkeluarga secara matang.
+                </p>
+                <button class="outline-btn"
+                    onclick="openModal('Perencanaan Kehidupan', 'Perencanaan kehidupan membantu remaja mempersiapkan berbagai aspek kehidupan secara bertahap dan bertanggung jawab.')">
+                    Pelajari PUP →
+                </button>
+            </div>
+            <div class="plan-visual">
+                <div class="plan-circle">
+                    <span>🌱</span>
+                </div>
+                <div class="plan-step step-one">
+                    <b>01</b>
+                    Pendidikan
+                </div>
+                <div class="plan-step step-two">
+                    <b>02</b>
+                    Karier
+                </div>
+                <div class="plan-step step-three">
+                    <b>03</b>
+                    Keluarga
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GATI -->
+    <section class="gati-section" id="gati">
+        <div class="gati-decoration">GATI</div>
+        <div class="gati-content">
+            <div class="gati-illustration">
+                <div class="person father">👨🏻</div>
+                <div class="heart">♥</div>
+                <div class="person child">🧒🏻</div>
+            </div>
+            <div class="gati-text">
+                <span>04 — GERAKAN AYAH</span>
+                <h2>
+                    Ayah hadir,<br>
+                    keluarga kuat.
+                </h2>
+                <p>
+                    GATI mendorong keterlibatan ayah dalam
+                    pengasuhan, pendidikan, perlindungan,
+                    dan pembangunan keluarga.
+                </p>
+                <button class="white-btn"
+                    onclick="openModal('GATI', 'Gerakan Ayah Teladan Indonesia mendorong keterlibatan ayah dalam pengasuhan, pendidikan, perlindungan, dan pembangunan keluarga.')">
+                    Kenali GATI →
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- PROGRESS -->
+    <section class="section progress-section">
+        <div class="section-heading">
+            <span>YOUR PROGRESS</span>
+            <h2>Perjalanan Belajarmu</h2>
+        </div>
+        <div class="progress-card">
+            <div class="progress-top">
+                <div>
+                    <strong id="progressTitle">
+                        Mulai perjalananmu
+                    </strong>
+                    <p>
+                        Buka materi untuk meningkatkan progress.
+                    </p>
+                </div>
+                <strong id="progressText">0%</strong>
+            </div>
+            <div class="progress-track">
+                <div id="progressBar"></div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+            <span>Gen</span>Re
+        </div>
+        <p>
+            Belajar. Berencana. Berkarya.
+        </p>
+        <small>
+            GenRe Dashboard © 2026
+        </small>
+    </footer>
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-box">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <span id="modalLabel">MATERI GENRE</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <button class="primary-btn" onclick="closeModal()">
+                Sudah Paham ✓
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
